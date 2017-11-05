@@ -2,10 +2,11 @@
 var html = '';
 var firstNumber = 1;
 var secondNumber = 1;
-var calculated = 2;
+var calculated = 1;
 
 //Creates all of the html (which is mostly buttons with numbers to click on)
 function createHtml()	{
+		html += '<div class="first">'
 //First times table
 	for (var i = 1; i < 101; i++) {
 		html += '<button id="' + i + '" class="number">' + i + '</button>';
@@ -13,14 +14,21 @@ function createHtml()	{
 		if (i % 10 === 0) {
 		html += '<br>';
 		}
+		if (i % 100 === 0) {
+		html += '</div>';
+		}
 	}
 //Creates html with the calculation. This gets updated when a new calculation is done
 	html += '<h1 id="calculation">' + firstNumber + ' x ' + secondNumber + ' = ' + calculated + ' </h1>';
+	html += '<div class="second">'
 //Creates second times table
 	for (var i = 1; i < 101; i++) {
 		html += '<button id="b' + i + '" class="bnumber">' + i + '</button>';
 		if (i % 10 === 0) {
 		html += '<br>';
+		}
+		if (i % 100 === 0) {
+		html += '</div>';
 		}
 	}
 }

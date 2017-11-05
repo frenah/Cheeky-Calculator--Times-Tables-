@@ -1,19 +1,56 @@
 button	{
-	padding: 10px;
-	width: 50px;
+	font-family: 'Comic Sans MS', 'Comic Sans', sans-serif;
+	width: 5vh;
+	height: 5vh;
+	font-size: 1.7vh;
+	display: inline-block;
+	margin: 0 auto;
+	padding: 0 auto;
+	border: 1px solid black;
+	vertical-align: top;
+	cursor: pointer;
 }
 
 #calculation	{
-
-	font-size: 50px;
+	display: inline-block;
+	font-size: 4vh;
+	vertical-align: top;
 }
 
 .selected1	{
 	background-color:  blue;
 	color: white;
+	border: 1px solid black;
 }
 
 .selected2	{
 	background-color:  blue;
 	color: white;
+	border: 1px solid black;
+}
+
+h1	{
+	font-family: 'Comic Sans MS', 'Comic Sans', sans-serif;
+	color: rgb(150, 251, 199);
+	text-shadow: 0 1px 0 black, 0 -1px 0 black, 1px 0 0 black, -1px 0 0 black;
+}
+
+h3	{
+	clear: left;
+	display: inline;
+}
+
+.second, .first	{
+	display: inline-block;
+	margin: 0px 1.5vh 0px 1.5vh;
+	padding: 0px auto;
+}
+
+.first	{
+	float: left;
+
+}
+
+.second	{
+	float: left;
 }
